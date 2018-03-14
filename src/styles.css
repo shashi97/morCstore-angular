@@ -1,0 +1,353 @@
+/* You can add global styles to this file, and also import other style files */
+.setSimulate {
+  overflow-x: auto;
+  padding: 0 0;
+  width: 100%;
+}
+
+.setWhiteSpace {
+  max-width: 116%;
+  height: 0%;
+  display: flex;
+  padding: 4% 1% 1% 1%;
+}
+
+.boxx {
+  box-shadow: 0px 0px 1px #0a7ae6;
+  margin-right: 1%;
+  font-size: 14px;
+  width: 100%;
+  height: 240px;
+  border: 1px solid grey;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  word-wrap: break-word;
+  padding: 1%;
+  overflow: auto;
+}
+
+.box:hover {
+  box-shadow: 0px 0px 5px #0a7ae6;
+}
+
+.status {
+  width: 20em;
+  word-wrap: break-word;
+  font-size: larger;
+  height: 45px;
+  font-weight: 700;
+}
+
+.nodata {
+  margin-top: 41%;
+  text-align: -webkit-center;
+  color: #b5c1cf;
+  font-size: x-large;
+}
+body{
+  width: 100%;
+  overflow: hidden;
+}
+header{
+  box-shadow: 0 0 0 1px #000;
+  color: #000;
+  background: #fff;
+  padding: 0 8px;
+}
+header a{
+  line-height: 40px;
+  height: 100%;
+  padding: 0 7px;
+  margin-left: 13px;
+  float: left;
+
+}
+header .navBrand{
+font-size: 20px;
+
+margin-left: 0px;
+
+color: #0a7ae6;
+
+}
+header a:hover,#aside a:hover{
+  background: #51a0df;
+  color: #fff;
+
+}
+a{
+  color: #000
+}
+a:hover{
+  text-decoration: none;
+}
+#aside {
+  position: fixed;
+  height:100vh;
+  border-right: 1px solid #000;
+  width: 60px;
+  font-size: 0;
+  text-align: center;
+  padding-right: 1px;
+}
+.dockedLevelOne {
+  max-height: calc(100vh - 84px);
+  overflow-y: auto;
+}
+.dockedLevelTwo {  
+  max-height: calc(100vh - 124px);
+  overflow-y: auto;
+}
+
+#aside nav {
+ 
+}
+main {
+  padding-left: 60px;
+  height: 100%;
+  height: 100vh;
+}
+#aside .fa {
+  font-size: 14px;
+}
+#aside a{
+  cursor: pointer;
+  padding: 10px 15px;
+  display: block;
+}
+.OpenMenu #aside {
+  width: 220px;
+  font-size: 15px;
+  text-align: left;
+}
+.OpenMenu main {
+  padding-left: 220px;
+}
+#ToogleMainMenu, #createWorkPlace {
+  border-bottom: 1px solid #000;
+  min-height: 42px;
+}
+.userMenu{
+  line-height: 1.3;
+  position: relative;
+  padding-left: 20px;
+}
+.userMenu .ui-splitbutton button.ui-button-text-only{
+display: none
+
+}
+.userMenu .ui-splitbutton{
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width:100%;  
+  }
+  .userMenu .ui-splitbutton .ui-button.ui-splitbutton-menubutton{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .userMenu:hover{
+    background: none!important;
+    color: #000;
+  }
+  .topMenu a{
+    cursor: pointer;
+    border-left: 1px solid #000;
+    padding-top: 5px;
+    height: 40px;
+    margin-left: 0;
+    color: #6b6464;
+  }
+  .userMenu small {
+    line-height: 1.2;
+    margin-right: 10px;
+}
+.userMenu .ui-menu{
+  left: auto!important;
+  right: 13px;
+  top: 36px!important;
+  overflow: hidden;
+}
+.userMenu .ui-menu a{
+  margin: 0;
+}
+.ui-menu .ui-menuitem-link .ui-menuitem-icon{
+  float: right;
+}
+.pageTopheader {
+  border-bottom: 1px solid #000;
+  padding: 5px 15px 4px;
+  min-height: 42px;
+  line-height: 1.2;
+}
+.cursor{
+  cursor: pointer;
+}
+
+
+.bredcumList a {
+  margin-left: 0;
+}
+header breadcrumb{
+float: left;
+}
+header breadcrumb ol,header breadcrumb ul{
+  margin-bottom: -5px;
+}
+.tierIncluded .tier1{
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 250px;
+}
+.tier1 .tierContainer{
+   min-height: 42px;
+  padding: 15px;
+}
+.tierIncluded #setSimulate{
+  padding-left: 250px;
+}
+.tierIncluded{
+  position: relative;
+}
+.tierIncluded:before{
+  background: #000;
+  width:1px;
+  height: 100%;
+  content:"";
+  display: block;
+  left: 250px;
+  top: 0;
+  position: absolute;
+}
+.tierContainer .table a {
+  cursor: pointer;
+  color: #2687CE;
+}
+.tierContainer .table a:hover {
+  cursor: pointer;
+  color: #2687CE;
+  text-decoration: underline;
+}
+
+.tierx{
+  height: 100%;
+  height: 100vh;
+}
+.setSimulate{
+  overflow-x: auto;
+}
+.pd0{
+  padding: 0;
+}
+.bredcumList li:before{
+  content: "\F105";
+  font-family: FontAwesome;
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+.bredcumList li:last-child:before{
+  visibility:hidden;
+}
+.topMenu a form{
+  display: none;
+}
+.topMenu a.openForm form{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 1;
+  position: relative;
+  top: -5px;
+  
+}
+
+.topMenu .openForm form input{
+  line-height: 40px;
+  height: 40px;
+  border: none;
+  padding:5px 10px; 
+  box-shadow: none!important;
+  outline: none!important;
+}
+.topMenu a.openForm:hover{
+  color: #000;
+ 
+  background: none;
+}
+
+.topMenu a.openForm .fa{
+color: #51a0df
+}
+.topMenu a.openForm{
+  border-left: 1px solid #51a0df;
+}
+.menuIcon{
+  display: none;
+}
+.tierNone {
+  display: none;
+}
+
+@media only screen and (max-width:1100px) {
+  .menuIcon{
+    display: inline-block;
+  }
+  .breadcum{
+    display: none;
+  }
+  header .bredcumList{
+    position: absolute;
+    top: 40px;
+    left: 113px;
+    background: #fff;
+   
+    z-index: 1000;
+  }
+  header .bredcumList li,  header .bredcumList li a{
+    display: block;
+    width: 100%;
+  }
+  header .bredcumList li a{
+    padding: 10px;
+    line-height: 1.2
+  }
+  header .bredcumList li::before{
+    display: none;
+  }
+}
+.toolbar a{
+  padding: 11px 10px 10px;
+  display: block;
+  float: left;
+  border-left: 1px solid #000;
+}
+.toolbar a:first-child{
+  border-left: none;
+}
+.toolbar {
+  padding: 0 15px;
+  border-bottom: 1px solid #000;
+  
+}
+.toolbar a:hover{
+background: #51a0df;
+color: #fff;}
+
+.vpheight{
+  height:100vh;
+}
+
+.content-region {
+  padding-left: 5px;
+  margin-left:2px;
+  overflow-x:scroll
+}

@@ -1,0 +1,58 @@
+<div>
+  <div>
+    <div class="col-sm-12 col-md-12 pd0" style="padding-left:1px;">
+      <div class="pageTopheader clearfix">
+        <div class="pagename pull-left">{{entity.Name}}
+          <div>
+            <small>{{entity.Description}}</small>
+          </div>
+        </div>
+        <i style="margin-top:8px" class="fa cursor fa-times pull-right" aria-hidden="true" (click)="goBack()"></i>
+      </div>
+    </div>
+    <div class="col-xs-5 col-sm-4 col-md-4 col-lg-3 pd0 " style="padding-left:1px" >
+      <div class="vertical-menu dockedLevelOne">
+        <a class="">
+          <i class="fa fa-desktop icon" aria-hidden="true"></i>
+          Home</a>
+        <a (click)="goSearch('backup')">
+          <i class="fa fa-bolt icon" aria-hidden="true"></i>Backups</a>
+        <a>
+          <i class="fa fa-globe icon" aria-hidden="true"></i>
+          Overview</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>
+          Activity log</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Access Contro(IAM)</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Tags</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Diagnose and problems</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Quickstart</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Deployment credentials</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Deployment slots</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Deployment option</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Tags</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Diagnose and problems</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Quickstart</a>
+        <a>
+          <i class="fa fa-picture-o icon" aria-hidden="true"></i>Deployment credentials</a>
+        
+      </div>
+    </div>
+
+    <div class="col-xs-7 col-sm-8 col-md-8 col-lg-9 pd0">
+      <div class="setSimulate">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

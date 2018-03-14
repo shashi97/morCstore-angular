@@ -1,0 +1,65 @@
+.vertical-menu {
+  width: 250px;
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.boxed{
+  padding: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCCCCC;
+  /* box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important; */
+}
+.pageAdd a{
+  padding: 11px 10px 10px;
+  display: block;
+  float: left;
+  border-left: 1px solid #000;
+}
+.pageAdd a:first-child{
+  border-left: none;
+}
+.pageAdd{
+  padding: 0 15px;
+  border-bottom: 1px solid #000;
+  
+}
+.pageAdd a:hover{
+background: #51a0df;
+color: #fff;}

@@ -1,0 +1,52 @@
+<div class="tier" id="widgetParentDiv" #widgetParentDiv [ngClass]="{'tierIncluded': tierContent}">
+
+  <div [ngClass]="[innerContentTier ? 'tier1':'tierNone']">
+    <div class="pageTopheader clearfix">
+      <div class="pagename pull-left">{{title}}
+        <div>
+          <small>manojconqsys (Default Directory)</small>
+        </div>
+      </div>
+      <i style="margin-top:8px" class="fa cursor fa-times pull-right" aria-hidden="true" (click)="goBack()"></i>
+    </div>
+    <div class="pageAdd clearfix">
+      <a (click)="openChild(null)">
+        <i class="fa fa-plus"></i> Add
+      </a>
+      <a href="javascript:void(0)">
+        <i class="fa fa-refresh"></i> Refresh
+      </a>
+
+    </div>
+
+
+    <div class="tierContainer">
+
+      <table class="table table-bodered">
+        <thead>
+          <th>Name</th>
+          <th *ngIf="!tierContent">Mobile</th>
+          <th *ngIf="!tierContent">Email</th>
+          <th *ngIf="!tierContent">City</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of DataTable">
+            <td><a (click)="openChild(user)">{{user.Name}}</a></td>
+            <td *ngIf="!tierContent">{{user.Mobile}}</td>
+            <td *ngIf="!tierContent">{{user.Email_ID}}</td>
+            <td *ngIf="!tierContent">{{user.City}}</td>
+            <td *ngIf="tierContent">...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+  <div>
+    <div class="setSimulate" id="setSimulate" #setSimulate>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>

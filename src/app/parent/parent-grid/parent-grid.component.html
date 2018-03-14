@@ -1,0 +1,24 @@
+<table class="table table-bodered">
+    <thead>
+      <th *ngFor="let header of tableHeaders">header.Name</th>
+    </thead>
+
+    <tr *ngFor="let row of tableRows">
+      <td *ngIf="user.id == EditRowID">
+        <input type="text">
+      </td>
+      <td *ngIf="user.id !== EditRowID" (click)="Edit(user.id)">{{user.Name}}</td>
+      <td *ngIf="user.id == EditRowID">
+        <input type="text">
+      </td>
+      <td *ngIf="user.id !== EditRowID" (click)="Edit(user.id)">{{user.Mobile}}</td>
+      <td *ngIf="user.id == EditRowID">
+        <input type="text">
+      </td>
+      <td *ngIf="user.id !== EditRowID" (click)="Edit(user.id)">{{user.Email_ID}}</td>
+      <td *ngIf="user.id == EditRowID">
+        <input type="text">
+      </td>
+      <td *ngIf="user.id !== EditRowID" (click)="Edit(user.id)">{{user.City}}</td>
+    </tr>
+  </table>

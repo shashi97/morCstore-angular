@@ -1,0 +1,45 @@
+<div class="">
+  <div class="pageTopheader clearfix">
+    <div class="pagename pull-left visible-hidden">&nbsp;
+      <div>
+        <small>&nbsp;</small>
+      </div>
+    </div>
+  </div>
+  <div class="pageHeight">
+    <!-- <i class="fa fa-times pull-right" aria-hidden="true" (click)="goBack()" ></i> -->
+    <div class="">
+
+      <table class="table table-bodered">
+        <thead>
+          <th>Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>City</th>
+        </thead>
+        <tr>
+          <td>
+            <input type="text" name="name" placeholder="Enter Name" [(ngModel)]="employeeDetails.name">
+          </td>
+          <td>
+            <input type="text" placeholder="Mobile No." [(ngModel)]="employeeDetails.mobile">
+          </td>
+          <td>
+            <input type="text" placeholder="Email-Id" [(ngModel)]="employeeDetails.email">
+          </td>
+          <td>
+            <input type="text" placeholder="City Detail" [(ngModel)]="employeeDetails.address">
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
+    <button type="button" (click)="saveEmployeeDetails()" class="btn btn-primary">Save</button>
+  </div>
+</div>
+<div>
+  <div class="setSimulate">
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+</div>

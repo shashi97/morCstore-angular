@@ -1,0 +1,243 @@
+<!-- header starts here -->
+<header>
+    <div class="clearfix">
+
+        <div class="pull-left">
+            <a href="" class="navBrand">Sample</a>
+            <a (click)="isShowBreadcrumbs = !isShowBreadcrumbs;">
+                <i class="fa fa-arrows-alt menuIcon" aria-hidden="true"></i>
+            </a>
+            <breadcrumb [ngClass]="{'breadcum': isShowBreadcrumbs }" class="breadcum"></breadcrumb>
+
+
+        </div>
+        <div class="pull-right topMenu">
+            <a [ngClass]="{'openForm': isShowSearch }" class="openForm">
+                <i class="fa fa-2x fa-search" aria-hidden="true" (click)="isShowSearch = !isShowSearch;"></i>
+                <form>
+
+                    <input type="search" placeholder="search here" />
+                    <i class="fa fa-close" aria-hidden="true" (click)="isShowSearch = !isShowSearch;"></i>
+                </form>
+            </a>
+            <a (click)="isShowSetting = !isShowSetting;">
+                <i class="fa fa-2x fa-bell" aria-hidden="true"></i>
+            </a>
+            <a (click)="isShowSetting = !isShowSetting;">
+                <i class="fa fa-2x fa-cog" aria-hidden="true"></i>
+            </a>
+            <a (click)="isShowSetting = !isShowSetting;">
+                <i class="fa fa-2x fa-comments-o" aria-hidden="true"></i>
+            </a>
+            <a (click)="isShowSetting = !isShowSetting;">
+                <i class="fa fa-2x fa-question-circle-o" aria-hidden="true"></i>
+            </a>
+            <a class="userMenu">
+                <small class="pull-left text-right">anil@gmail.com
+                    <div>anil as default user </div>
+                </small>
+
+                <img class="img-circle pull-right" src="https://portal.azure.com/Content/static/MsPortalImpl/AvatarMenu/AvatarMenu_defaultAvatarSmall.png">
+
+                <p-splitButton [model]="userMenu"></p-splitButton>
+            </a>
+
+
+        </div>
+    </div>
+
+
+</header>
+<!-- right info sec -->
+<div id="TopheaderInfo" *ngIf="isShowSetting">
+    <div class="topinfoheader">fdfd dfdf
+        <i class="fa cursor fa-times pull-right" style="margin-top:8px"></i>
+    </div>
+    <div class="topheaderContainer">hshIn publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual
+        elements of a graphic document or visual presentation. Replacing meaningful In publishing and graphic design, lorem
+        ipsum is a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual
+        presentation. Replacing meaningful In publishing and graphic design, lorem ipsum is a filler text or greeking commonly
+        used to demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful In publishing
+        and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of
+        a graphic document or visual presentation. Replacing meaningful In publishing and graphic design, lorem ipsum is
+        a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual presentation.
+        Replacing meaningful In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to
+        demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful In publishing
+        and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of
+        a graphic document or visual presentation. Replacing meaningful dshujhdjd</div>
+</div>
+
+
+<!-- main content sec starts here -->
+
+<div [ngClass]="[mainMenuBtn ? 'OpenMenu':'']" id="wrapper" #wrapper>
+    <aside id="aside" >
+        <div id="ToogleMainMenu">
+            <a (click)="mainMenuBtn = !mainMenuBtn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div id="createWorkPlace">
+            <a href="javascript:void(0)">
+                <i class="fa fa-plus"></i> New
+            </a>
+        </div>
+        <nav class="dockedLevelTwo">
+            <ul class="list-unstyled SideMainMenu">
+                <li>
+                    <a (click)="goSearch('parent')" title="Dashboard">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a (click)="goSearch('All Resources')" title="All Resources">
+                        <i class="fa fa-external-link-square" aria-hidden="true"></i>
+                        All Resources </a>
+                </li>
+                <li>
+                    <a title="Resources Group">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                        Resources Group </a>
+                </li>
+                <li>
+                    <a title="App Services" (click)="goSearch('appservices')" >
+                        <i class="fa fa-eercast" aria-hidden="true"></i>
+                        App Services</a>
+
+                </li>
+                <li>
+                    <a title="Function Apps">
+                        <i class="fa fa-area-chart" aria-hidden="true"></i>
+                        Function Apps </a>
+                </li>
+                <li>
+                    <a title="SQL Databases">
+                        <i class="fa fa-bug" aria-hidden="true"></i>
+                        SQL Databases </a>
+                </li>
+                <li>
+                    <a title="Azure Cosmos DB">
+                        <i class="fa fa-clone" aria-hidden="true"></i>
+                        Azure Cosmos DB</a>
+
+                </li>
+                <li>
+                    <a title="Virtual Machines">
+                        <i class="fa fa-rss" aria-hidden="true"></i>
+                        Virtual Machines </a>
+
+                </li>
+                <li>
+                    <a title="Load balancers">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                        Load balancers</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage Account</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage Account</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage Account</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage Account</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage Account</a>
+                </li>
+                <li>
+                    <a title="Staorage Account">
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        Staorage value</a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div>
+    <div class="col-sm-2 col-xs-2 	col-md-2 	col-lg-2">
+
+        <div class="wrapper">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                        <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </button>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a  >
+                            <i class="glyphicon glyphicon-briefcase"></i>
+                            About
+                        </a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Pages
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a  >Page 1</a>
+                            </li>
+                            <li>
+                                <a  >Page 2</a>
+                            </li>
+                            <li>
+                                <a  >Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a  >
+                            <i class="glyphicon glyphicon-link"></i>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a  >
+                            <i class="glyphicon glyphicon-send"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content">
+                <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="col-sm-10">
+                <div class="setSimulate">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div> -->
